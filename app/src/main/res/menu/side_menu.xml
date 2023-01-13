@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/baseSelectionFragment"
+            android:icon="@drawable/ic_baseline_base_24"
+            android:title="@string/base_name" />
+        <item
+            android:id="@+id/guideSelectionFragment"
+            android:icon="@drawable/ic_baseline_fisherman_guide_24"
+            android:title="@string/guide_contacts" />
+        <item
+            android:id="@+id/RegistrationFragment"
+            android:icon="@drawable/ic_baseline_avatar_24"
+            android:title="@string/guide_contacts" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_baseline_map_24"
+            android:title="@string/Map" />
+        <item
+            android:id="@+id/nav_exampleNav"
+            android:icon="@drawable/ic_baseline_lock_open_24"
+            android:title="@string/Access_level" />
+    </group>
+</menu>
+
+

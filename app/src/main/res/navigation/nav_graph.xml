@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AuthFragment">
+
+    <fragment
+        android:id="@+id/AuthFragment"
+        android:name="ru.netology.fishbook.ui.fragments.LoginFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/baseSelectionFragment"
+        android:name="ru.netology.fishbook.ui.fragments.BaseSelectionFragment"
+        android:label="fragment_base_selection"
+        tools:layout="@layout/fragment_base_selection" />
+
+    <fragment
+        android:id="@+id/guideSelectionFragment"
+        android:name="ru.netology.fishbook.ui.fragments.GuideSelectionFragment"
+        android:label="fragment_guide_selection"
+        tools:layout="@layout/fragment_guide_selection" />
+
+    <fragment
+        android:id="@+id/RegistrationFragment"
+        android:name="ru.netology.fishbook.ui.fragments.RegistrationFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_registration" >
+
+
+
+        <action
+            android:id="@+id/action_RegistrationFragment_to_AuthFragment"
+            app:destination="@id/AuthFragment" />
+    </fragment>
+
+
+
+
+
+
+</navigation>
